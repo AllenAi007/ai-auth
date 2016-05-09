@@ -2,15 +2,6 @@
 -- init sql
 use SSO;
 
-DROP TABLE user_role_resource;
-CREATE TABLE user_role_resource
-(
-  user_role_id     INT(11) NOT NULL,
-  user_resource_id INT(11) NOT NULL,
-  CONSTRAINT `FK_URR_USER_ROLE_ID` FOREIGN KEY (`user_role_id`) REFERENCES `user_role` (`id`),
-  CONSTRAINT `FK_URR_USER_RESOURCE_ID` FOREIGN KEY (`user_resource_id`) REFERENCES `user_resource` (`id`)
-);
-
 
 INSERT INTO user_authorization (USER_LOGIN_NAME, PASSWORD, USER_FIRST_NAME, USER_LAST_NAME, UPDATED_DATE, CREATED_DATE)
   VALUE ('admin', 'admin123', 'admin', '', sysdate(), sysdate());
