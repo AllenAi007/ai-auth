@@ -8,6 +8,6 @@
 
     <context:property-placeholder location="classpath:sso/properties/*.properties" file-encoding="UTF-8"/>
 
-    <context:component-scan base-package="org.ai.auth.service.*"/>
+    <context:component-scan base-package="org.ai.auth.service.*,org.ai.auth.resource"/>
 
 </beans>
