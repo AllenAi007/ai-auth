@@ -71,7 +71,7 @@ public class AuthResource {
 
 
     /**
-     * /verify?userLoginId=&challenge=&hash=
+     * /verify?userLoginId=%s&challenge=%s&hash=%s
      *
      * @param userLoginId
      * @param challenge   base64 encrypt string

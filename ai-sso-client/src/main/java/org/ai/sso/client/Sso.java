@@ -1,4 +1,4 @@
-package org.ai.sso.sso;
+package org.ai.sso.client;
 
 import org.ai.sso.model.UserAuthorization;
 import org.apache.commons.codec.binary.Base64;
